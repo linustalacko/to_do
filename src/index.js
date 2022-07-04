@@ -1,3 +1,4 @@
-import {search_bar} from './index'
+import {search_bar} from './homepage';
 
 search_bar();
+

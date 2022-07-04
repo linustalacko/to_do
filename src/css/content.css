@@ -1,0 +1,52 @@
+#content {
+    display: flex;
+    height: 100%;
+    padding-bottom: 100%;
+}
+
+#new-projects {
+    padding: 2vh 8vw 0 2vw;
+    text-align: left;
+    padding-bottom: 100%;
+    background-color: rgb(240, 240, 240);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+li > button {
+    color: rgb(129, 129, 129);
+    border: transparent;
+    width: 100%;
+    text-align: left;
+    padding: 0.4vw;
+    font-size: 1rem;
+    transition: 0.3s;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+li > button:hover {
+    background-color: rgb(185, 185, 185);
+    color: black;
+    cursor: pointer;
+}
+
+#project-submit {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+#project-submit:hover {
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+
+
+#project-display {
+    padding: 2vh 0 0 2vw;
+}
