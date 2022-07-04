@@ -1,8 +1,12 @@
 import {create_header} from './header'
 import './css/content.css'
 import Swal from 'sweetalert2'
+import {to_do_list} from './to_do_list_maker'
 
 create_header();
+
+const projects = {};
+let count = 0;
 
 function search_bar() {
     const project = []
@@ -13,10 +17,14 @@ function search_bar() {
         const right_hand_side = document.createElement('div');
         left_hand_side.id = 'new-projects';
         right_hand_side.id = 'project-display';
-        right_hand_side.innerHTML = 'hello world'
-        const title_of_left = document.createElement('h3')
-        title_of_left.innerHTML = 'Existing Projects:'
+        const title_of_left = document.createElement('h3');
+        title_of_left.innerHTML = 'Existing Projects:';
         left_hand_side.appendChild(title_of_left);
+
+
+        function create_right_btn() {
+            const
+        }
         
         function create_left_btn() {
             const ul = document.createElement('ul');
@@ -29,22 +37,13 @@ function search_bar() {
             left_hand_side.appendChild(ul)
 
 
-           
-
             btn.addEventListener('click', () => {
                 Swal.fire({
                     title: 'Name your project:',
                     html: '<input id="project-input" class="swal2-input">',
                     confirmButtonText: '<button type="button" id="project-submit" aria-label="" style="display: inline-block; padding: 0; background-color: none;">Submit</button>',
                 })
-                const prbtn = document.getElementById('project-submit');
-                prbtn.addEventListener('click', () => {
-                    const item_btn = document.createElement('button')
-                    let project_value = document.getElementById('project-input').value;
-                    item_btn.innerHTML = project_value;
-                    btn.before(item_btn)
-                })
-                
+                to_do_list();
             })
         }
 
