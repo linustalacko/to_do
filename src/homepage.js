@@ -5,8 +5,7 @@ import {to_do_list} from './to_do_list_maker'
 
 create_header();
 
-const projects = {};
-let count = 0;
+
 
 function search_bar() {
     const project = []
@@ -20,11 +19,6 @@ function search_bar() {
         const title_of_left = document.createElement('h3');
         title_of_left.innerHTML = 'Existing Projects:';
         left_hand_side.appendChild(title_of_left);
-
-
-        function create_right_btn() {
-            const
-        }
         
         function create_left_btn() {
             const ul = document.createElement('ul');

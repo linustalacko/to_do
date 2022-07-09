@@ -45,8 +45,26 @@ ul {
     list-style-type: none;
 }
 
-
-
 #project-display {
     padding: 2vh 0 0 2vw;
+    width: 70%;
+
+}
+
+#to_do_things {
+    display: grid;
+    padding-bottom: 10px;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-area: 10vh;
+    width: 50%;
+}
+
+#to_do_things > div {
+    color: white;
+    border: transparent;
+    border-radius: 10px;
+    background-color: rgb(137, 74, 253);
+    padding: 10px;
+
 }
